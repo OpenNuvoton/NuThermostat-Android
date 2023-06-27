@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/transparent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/view_style">
+
+        <ProgressBar
+            android:id="@+id/wifi_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+          />
+
+        <ImageView
+            android:id="@+id/wifi_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/icon_wifi_connected"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/device_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/ISP_bt"
+            android:layout_toEndOf="@+id/wifi_img"
+            android:gravity="center"
+            android:text="Device Connecting..."
+            android:textColor="@color/nu_text"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/ISP_bt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/delete_bt"
+            android:background="@drawable/button_style"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_update" />
+
+        <ImageButton
+            android:id="@+id/delete_bt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/button_style"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_delete" />
+
+        <Button
+            android:id="@+id/item_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/device_text"
+            android:layout_alignEnd="@+id/device_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button_style"
+             />
+    </RelativeLayout>
+</RelativeLayout>

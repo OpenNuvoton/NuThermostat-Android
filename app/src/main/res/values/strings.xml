@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">NuThermostat</string>
+    <string name="add_device">Add Device</string>
+    <string name="please_set_wifi">Please enter your Home Wi-Fi SSID and Password. \nAfter confirming, please switch the Wi-Fi connection to SSID:</string>
+    <string name="please_set_wifi_title">Set Wi-Fi</string>
+    <string name="ok">ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="setting">Setting</string>
+    <string name="pairDevice">Obtain and pair device information</string>
+    <string name="plwaseWaite">Please wait while setting</string>
+    <string name="Delete_title">Delete</string>
+    <string name="Delete_Message">Are you sure you want to delete the device?</string>
+    <string name="connect_error">\"Setting error. Please check the status of the network or the device.\"</string>
+    <string name="please_set_wifi_toHome">Please set your wifi back to your home wifi network that is in the same domain as the device.</string>
+    <string name="error">Error</string>
+    <string name="please_try_again">Setting failed. Please try again.</string>
+    <string name="loading">loading...</string>
+    <string name="confirm_status">Unable to retrieve device information, \nplease confirm device connectivity status.</string>
+    <string name="target_temperature_c">Target temperature °C</string>
+    <string name="current_temperature">Current temperature</string>
+    <string name="antifrost">Antifrost</string>
+    <string name="lock">Lock</string>
+    <string name="Not_Nuvoton_QR_Code">Not Nuvoton QR Code</string>
+    <string name="scan_the_device_qr_code">Scan the Device QR code</string>
+    <string name="start_burn">Start burn</string>
+    <string name="file_name">File Name</string>
+    <string name="ISP_OTA_Title">Nuvoton ISP Programming</string>
+    <string name="ISP_OTA_Message">Are you sure you want to enter the ISP update mode ?</string>
+    <string name="not_bin">Please ensure that the selected file type is correct.</string>
+    <string name="bin_size_over">The file size is too large !</string>
+    <string name="device_not_connect">Device not connected.</string>
+    <string name="burn_ok">The hardware version has been successfully burned. It is now running and resetting. Please wait.</string>
+</resources>

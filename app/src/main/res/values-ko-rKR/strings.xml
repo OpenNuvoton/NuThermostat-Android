@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NuThermostat</string>
+    <string name="add_device">장치 추가</string>
+    <string name="please_set_wifi">홈 Wi-Fi의 SSID와 비밀번호를 입력하세요. \n입력을 확인 후, Wi-Fi를 SSID(으)로 변경하세요. \n SSID = </string>
+    <string name="please_set_wifi_title">Wi-Fi 설정</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="next">다음</string>
+    <string name="setting">설정 중</string>
+    <string name="pairDevice">장치 정보를 얻고 페어링하세요</string>
+    <string name="plwaseWaite">잠시만 기다리세요</string>
+    <string name="Delete_title">치우다</string>
+    <string name="Delete_Message">장치를 삭제하시겠습니까?</string>
+    <string name="connect_error">설정 오류입니다. 네트워크 또는 장치 상태를 확인해주세요.</string>
+    <string name="please_set_wifi_toHome">Wi-Fi를 동일한 도메인에 있는 홈 Wi-Fi 네트워크로 다시 설정하십시오.</string>
+    <string name="error">오류</string>
+    <string name="please_try_again">설정에 실패했습니다. 다시 시도해주세요.</string>
+    <string name="loading">로딩 중...</string>
+    <string name="confirm_status">장치 정보를 검색할 수 없습니다. \n장치 연결 상태를 확인해주세요.</string>
+    <string name="target_temperature_c">희망 온도(℃)</string>
+    <string name="current_temperature">현재 온도(℃)</string>
+    <string name="antifrost">서리 방지</string>
+    <string name="lock">잠금</string>
+    <string name="Not_Nuvoton_QR_Code">Nuvoton QR 코드가 아닙니다</string>
+    <string name="scan_the_device_qr_code">장치 QR 코드 스캔</string>
+    <string name="start_burn">Start burn</string>
+    <string name="file_name">File Name</string>
+    <string name="ISP_OTA_Title">Nuvoton ISP Programming</string>
+    <string name="ISP_OTA_Message">Are you sure you want to enter the ISP update mode?</string>
+    <string name="not_bin">Please ensure that the selected file type is correct.</string>
+    <string name="bin_size_over">The file size is too large !</string>
+    <string name="device_not_connect">Device not connected.</string>
+    <string name="burn_ok">The hardware version has been successfully burned. It is now running and resetting. Please wait.</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NuThermostat</string>
+    <string name="add_device">追加デバイス</string>
+    <string name="please_set_wifi">ご家庭のWi-Fi SSIDとパスワードを入力してください。\n確認後、Wi-Fi接続をSSIDに切り替えてください.\nSSID:</string>
+    <string name="please_set_wifi_title">Wi-Fi設定</string>
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="next">次へ</string>
+    <string name="setting">設定</string>
+    <string name="pairDevice">デバイス情報の取得とペアリング</string>
+    <string name="plwaseWaite">設定中です。しばらくお待ちください。</string>
+    <string name="Delete_title">削除</string>
+    <string name="Delete_Message">このデバイスを削除しますか？</string>
+    <string name="connect_error">設定エラー。ネットワークまたはデバイスの状態を確認してください。</string>
+    <string name="please_set_wifi_toHome">デバイスと同じドメインのご家庭のWi-Fiネットワークに戻してください。</string>
+    <string name="error">エラー</string>
+    <string name="please_try_again">設定に失敗しました。もう一度お試しください。</string>
+    <string name="loading">読み込み中...</string>
+    <string name="confirm_status">デバイス情報を取得できません。 \nデバイスの接続状態を確認してください。</string>
+    <string name="target_temperature_c">目標温℃</string>
+    <string name="current_temperature">現在の温度℃</string>
+    <string name="antifrost">霧取り</string>
+    <string name="lock">ロック</string>
+    <string name="Not_Nuvoton_QR_Code">Nuvoton QRコードではありません</string>
+    <string name="scan_the_device_qr_code">デバイスのQRコードをスキャン</string>
+    <string name="start_burn">Start burn</string>
+    <string name="file_name">File Name</string>
+    <string name="ISP_OTA_Title">Nuvoton ISP Programming</string>
+    <string name="ISP_OTA_Message">Are you sure you want to enter the ISP update mode?</string>
+    <string name="not_bin">Please ensure that the selected file type is correct.</string>
+    <string name="bin_size_over">The file size is too large !</string>
+    <string name="device_not_connect">Device not connected.</string>
+    <string name="burn_ok">The hardware version has been successfully burned. It is now running and resetting. Please wait.</string>
+</resources>

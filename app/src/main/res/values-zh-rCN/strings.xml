@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NuThermostat</string>
+    <string name="add_device">添加设备</string>
+    <string name="please_set_wifi">请提供您家庭 Wi-Fi 的 SSID 和密码。\n确认后，请将 Wi-Fi 连接切换到以下 SSID：</string>
+    <string name="please_set_wifi_title">设置 Wi-Fi</string>
+    <string name="ok">好</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="setting">设置</string>
+    <string name="pairDevice">获取并配对设备信息</string>
+    <string name="plwaseWaite">设置中，请稍候</string>
+    <string name="Delete_title">删除</string>
+    <string name="Delete_Message">确定要删除该设备吗？</string>
+    <string name="connect_error">“设置错误。请检查网络或设备状态。”</string>
+    <string name="please_set_wifi_toHome">请将您的Wi-Fi设置回与设备处于同一域中的家庭Wi-Fi网络。</string>
+    <string name="error">错误</string>
+    <string name="please_try_again">设置失败，请重试。</string>
+    <string name="loading">加载中...</string>
+    <string name="confirm_status">无法检索设备信息，请确认设备的连接状态。</string>
+    <string name="target_temperature_c">目标温度 °C</string>
+    <string name="current_temperature">现在温度 °C</string>
+    <string name="antifrost">除雾</string>
+    <string name="lock">锁定</string>
+    <string name="Not_Nuvoton_QR_Code">非新唐 QR Code</string>
+    <string name="scan_the_device_qr_code">扫描设备二维码</string>
+    <string name="start_burn">Start burn</string>
+    <string name="file_name">File Name</string>
+    <string name="ISP_OTA_Title">Nuvoton ISP Programming</string>
+    <string name="ISP_OTA_Message">Are you sure you want to enter the ISP update mode?</string>
+    <string name="not_bin">Please ensure that the selected file type is correct.</string>
+    <string name="bin_size_over">The file size is too large !</string>
+    <string name="device_not_connect">Device not connected.</string>
+    <string name="burn_ok">The hardware version has been successfully burned. It is now running and resetting. Please wait.</string>
+</resources>
