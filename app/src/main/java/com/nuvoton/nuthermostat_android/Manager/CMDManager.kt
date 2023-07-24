@@ -10,6 +10,7 @@ enum class Commands constructor(val value: UInt){
     //value 為 Int
     CMD_SET_SSID            ((0xb0).toUInt()),
     CMD_SET_PASSWORD	    ((0xb1).toUInt()),
+    CMD_GET_UUID            ((0xb3).toUInt()),
 
     CMD_GET_INFO            ((0xa0).toUInt()),
     CMD_SET_POWER           ((0xa1).toUInt()),
@@ -18,6 +19,7 @@ enum class Commands constructor(val value: UInt){
     CMD_SET_DEFOG           ((0xa4).toUInt()),
     CMD_SET_LOCK            ((0xa5).toUInt()),
     CMD_SET_DATE_TIME       ((0xa6).toUInt()),
+
 }
 
 object CMDManager {
@@ -122,6 +124,24 @@ object CMDManager {
         }
     }
 
+    fun sendCMD_GET_UUID(callback: ((ByteArray?, Boolean) -> Unit)){
+
+        if(_mainTCPClient == null){
+            callback.invoke(_responseBuffer,false)
+            return
+        }
+
+        val cmd: Byte = Commands.CMD_GET_UUID.value.toByte()
+        var sendBuffer = byteArrayOf()
+        sendBuffer = sendBuffer + cmd
+
+        if(this.write(sendBuffer)  == null){
+            callback.invoke(_responseBuffer,false)
+            return
+        }
+
+        callback.invoke(_responseBuffer,true)
+    }
 
     fun sendCMD_SET_SSID(ssid:String,callback: ((ByteArray?, Boolean) -> Unit)){
 

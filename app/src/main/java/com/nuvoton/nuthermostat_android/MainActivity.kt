@@ -10,8 +10,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.nuvoton.nuthermostat_android.Manager.ItemData
 import com.nuvoton.nuthermostat_android.Manager.NSDManager
+import com.nuvoton.nuthermostat_android.Manager.SocketManager
 import com.nuvoton.nuthermostat_android.Util.Log
 import com.nuvoton.nuthermostat_android.Util.PermissionManager
+import kotlin.concurrent.thread
 
 
 class MainActivity : AppCompatActivity() {
@@ -68,13 +70,45 @@ class MainActivity : AppCompatActivity() {
 
         try {
             NSDManager.discoveryNDS(this,callback = { name, ip ->
-
+                var isHaveSameIP = false
 //                i in 0..array.count()-1
                 for (i in 0..SSID_LIST.size-1){
-                    if(name.indexOf(SSID_LIST[i].ssid)>0){
-                        SSID_LIST[i].ip = ip
+                    if(ip == SSID_LIST[i].ip){
+                        isHaveSameIP = true
+                        break
                     }
+
+//                    if(name.indexOf(SSID_LIST[i].ssid)>0){
+//                        SSID_LIST[i].ip = ip
+//                    }
                 }
+
+                if(isHaveSameIP ==  true){
+                    return@discoveryNDS
+                }
+                thread {
+                    SocketManager.funTCPClientConnect(ip,520,3000, callback = { socket ,isTrue,error ->
+                        if(isTrue == false){
+                            return@funTCPClientConnect
+                        }
+                        CMDManager.sendCMD_GET_UUID { bytes, b ->
+                            val asciiStringBuilder = StringBuilder()
+
+                            for (byte in bytes!!) {
+                                asciiStringBuilder.append(byte.toChar())
+                            }
+
+                            for (i in 0..SSID_LIST.size-1){
+                                if(asciiStringBuilder.toString() == SSID_LIST[i].ssid){
+                                    SSID_LIST[i].ip = ip
+                                    break
+                                }
+                            }
+
+                        }
+                    })
+                }
+
                 SharedPreferencesManager.saveSSIDList(this,SSID_LIST)
 
                 runOnUiThread {  _adapter!!.notifyDataSetChanged() }

@@ -152,8 +152,8 @@ object ISPCmdManager {
             firstData = firstData + sendByteArray[i]
         }
         var remainDataList: List<ByteArray> = listOf()
-        val remainData = sendByteArray.copyOfRange(48,sendByteArray.lastIndex+1)//第一個cmd 為 56 byte
-//        val remainData = ByteArray(sendByteArray.size - 48)//第一個cmd 為 56 byte
+        val remainData = sendByteArray.copyOfRange(48,sendByteArray.lastIndex+1)//第二之後cmd 為 56 byte
+//        val remainData = ByteArray(sendByteArray.size - 48)//第二之後cmd 為 56 byte
         var index = 0
         var dataArray = byteArrayOf()
         for (byte in remainData){
