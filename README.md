@@ -19,3 +19,7 @@ The version is limited to the operating system above Android 9.
 <img src="https://github.com/OpenNuvoton/NuThermostat-Android/blob/main/Screenshot_20230331-154717.png" alt="Cover" width="30%"/>
 <img src="https://github.com/OpenNuvoton/NuThermostat-Android/blob/main/Screenshot_20230428-172617.png" alt="Cover" width="30%"/>
 </p>
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
